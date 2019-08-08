@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Paul Ulvinius</Authors>
+    <Company>Stratiteq</Company>
+    <Description>Computes a thumbprint of the JWK using SHA-256 as per https://tools.ietf.org/html/rfc7638, JSON Web Key (JWK) Thumbprint.</Description>
+    <PackageProjectUrl>https://github.com/stratiteq/crypto</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/stratiteq/crypto</RepositoryUrl>
+    <PackageIconUrl>https://www.stratiteq.com/wp-content/uploads/sq-logo-black-64x64.png</PackageIconUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>..\..\Stratiteq.Crypto.ruleset</CodeAnalysisRuleSet>
+    <Features>IOperation</Features>
+    <NoWarn />
+    <DocumentationFile>bin/Stratiteq.Crypto.JwkThumbprint.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="..\..\stylecop.json" Link="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
